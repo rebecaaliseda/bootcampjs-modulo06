@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego de Cartas: Siete y media</title>
+  </head>
+  <body>
+    <div id="game">
+      <h1 class="title-game">Juego de Cartas: Siete y media</h1>
+      <div id="total-puntos" class="total-puntos">Total puntos:</div>
+
+      <div class="mesa-juego">
+        <div>
+          <img
+            src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/cartas/back.jpg"
+            alt="Dorso de la carta"
+            class="dorso-carta carta-jugador"
+          />
+        </div>
+        <div id="cartas" class="cartas"></div>
+      </div>
+      <div id="mensaje" class="mensaje"></div>
+      <div class="buttons">
+        <button id="nueva-carta">Pedir Carta</button>
+        <button id="me-planto">Me planto</button>
+        <button id="si-hubieras-seguido" disabled>Si hubieras seguido...</button>
+      </div>
+      <div class="button-nueva-partida">
+        <button id="jugar-nueva-partida" disabled>Nueva partida</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
