@@ -107,6 +107,9 @@ export const nuevaPartidaButtons = (): void => {
 
 export const nuevaPartida = (): void => {
   setTotalPuntosJugador(0);
+  setEstadoPartida('jugando');
+  setMensaje('');
+
   muestraPuntuacion(partida.totalPuntosJugador);
   if (cartasJugador) {
     cartasJugador.innerHTML = '';
